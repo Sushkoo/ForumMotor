@@ -30,7 +30,7 @@ namespace ForumMotor.Data.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,7 +59,7 @@ namespace ForumMotor.Data.Migrations
                         column: x => x.KategoriaId,
                         principalTable: "Kategoriak",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -92,7 +92,7 @@ namespace ForumMotor.Data.Migrations
                         column: x => x.TopicId,
                         principalTable: "Topicok",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(
